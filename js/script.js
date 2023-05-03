@@ -16,7 +16,7 @@ const calculateChangeCurrencyRate = async function() {
 
     rateTwoEle.value = (rateOneEle.value * currencyList[currencyTwoEle.value]).toFixed(2);
 
-    swapCurrencyText.textContent = `1 ${currencyOneEle.value} = ${currencyList[currencyTwoEle.value]} ${currencyTwoEle.value}`;
+    swapCurrencyText.textContent = `1 ${currencyOneEle.value} = ${currencyList[currencyTwoEle.value].toFixed(3)} ${currencyTwoEle.value}`;
   
 }
 
